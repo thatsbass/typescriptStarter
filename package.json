@@ -2,15 +2,17 @@
   "name": "01",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "build:ts": "npx tsc -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+  "build:css": "tailwindcss src/styles/tailwind.css -o dist/tailwind.css",
+  "build:ts": "npx tsc -w",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "tailwindcss": "^3.4.4"
   },
   "description": ""
 }
